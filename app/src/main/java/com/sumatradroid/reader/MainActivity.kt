@@ -788,7 +788,7 @@ class MainActivity : Activity(), DocView.Host {
         }
         button("Default zoom: ${Zoom.toString(settings.zoom)}") {
             val zs = floatArrayOf(Zoom.FIT_PAGE, Zoom.FIT_WIDTH, 100f, 125f, 150f, 200f)
-            Ui.list(this, theme, "Default zoom", zs.map { Zoom.toString(it) }, zs.indexOf(settings.zoom)) { settings.zoom = zs[it] }
+            Ui.list(this, theme, "Default zoom", zs.map { Zoom.toString(it) }, zs.indexOfFirst { it == settings.zoom }) { settings.zoom = zs[it] }
         }
         button("Page spacing: ${settings.pageSpacing} dp") {
             Ui.slider(this, theme, "Page spacing", 0, 24, settings.pageSpacing, { "$it dp" }, { settings.pageSpacing = it; applyDocColors() })
