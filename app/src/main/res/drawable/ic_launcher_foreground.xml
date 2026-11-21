@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original artwork: a page with a folded corner and three text lines. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- page -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M32,26 L60,26 L76,42 L76,82 L32,82 Z" />
+    <!-- folded corner -->
+    <path
+        android:fillColor="#FFC9D6EA"
+        android:pathData="M60,26 L76,42 L60,42 Z" />
+    <!-- text lines -->
+    <path
+        android:fillColor="#FF2B5C9E"
+        android:pathData="M39,50 L69,50 L69,54 L39,54 Z" />
+    <path
+        android:fillColor="#FF2B5C9E"
+        android:pathData="M39,60 L69,60 L69,64 L39,64 Z" />
+    <path
+        android:fillColor="#FF2B5C9E"
+        android:pathData="M39,70 L57,70 L57,74 L39,74 Z" />
+</vector>
